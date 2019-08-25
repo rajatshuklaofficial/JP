@@ -4,8 +4,8 @@ import './App.css';
 import Navbar from './component/layout/Navbar';
 import Landing from './component/layout/Landing';
 import Footer from './component/layout/Footer';
-import register from './component/auth/register';
-import login from './component/auth/login';
+import govtjobs from './component/pages/govtjobs';
+import pvtjobs from './component/pages/pvtjobs';
 
 class App extends Component {
   render(){
@@ -15,8 +15,8 @@ class App extends Component {
     <Navbar />
       <Route exact path="/" component={Landing} />
       <div className="container">
-      <Route exact path="/register" component={register}/>
-      <Route exact path="/login" component={login}/>
+      <Route exact path="/govtjobs" component={govtjobs}/>
+      <Route exact path="/pvtjobs" component={pvtjobs}/>
       </div>
       <Footer />
     </div>
